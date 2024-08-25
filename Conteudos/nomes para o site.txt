@@ -1,0 +1,7 @@
+Nomes para o site:
+1-ConquistaEdu
+2-StartAcadêmico
+3-InspiraEdu
+4-StudyMaster
+5-EduGuide
+6-StudyPro
