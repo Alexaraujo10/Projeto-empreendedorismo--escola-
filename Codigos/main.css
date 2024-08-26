@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.conteudos{
+    align-items: center;
+    color: var();
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: 400;
+    grid-gap: 16px;
+    gap: 16px;
+    grid-gap: var();
+    gap: var();
+    height: 52px;
+    justify-content: flex-start;
+    padding: 14px 0 14px 16px;
+    padding-left: var();
+    -webkit-text-decoration-color: var();
+    text-decoration-color: var();
+    width: 100%;
+    
+}
+
+.conteudos>a {
+    text-decoration: none;
+}
