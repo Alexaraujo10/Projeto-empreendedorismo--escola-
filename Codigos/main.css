@@ -7,7 +7,19 @@
     padding: 0px;
 }
 
+body{
+    background-color: #161C24;
+}
 
+div>#logo{
+    width: 139px;
+    height: 139px;
+    top: -378px;
+    left: -680px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
 
 .conteudos{
     align-items: center;
