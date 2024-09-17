@@ -11,13 +11,6 @@
 }
 
 
-.image {
-    width: 100px;
-    height: 100px;
-}
-
-
-
 .nerko-one-regular {
     font-family: "Nerko One", cursive;
     font-weight: 400;
@@ -29,21 +22,6 @@
 
 body{
     background-color: #161C24;
-}
-.logo  >  img {
-background-repeat: no-repeat;
-height: 90px;
-}
-
-
-div>#logo{
-    width: 139px;
-    height: 139px;
-    top: -378px;
-    left: -680px;
-    gap: 0px;
-    opacity: 0px;
-    
 }
 
 .conteudos{
@@ -88,6 +66,16 @@ div>#logo{
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
+}
+
+.info{
+    background-color: #293442;
+    color: black;
+    margin: left;
+    margin-top: 40px;
+    max-width: 230px;
+    min-height: 870px;
+
 }
 
 
