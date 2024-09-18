@@ -48,20 +48,11 @@ body{
     
 }
 
-.conteudos>a {
-    text-decoration: none;
-}
 
-.label {
-    width: 245px;
-    height: 64px;
-}
 
-.label .text-wrapper {
-    position: fixed;
-    width: 245px;
-    top: 0;
-    left: 0;
+
+.estuda{
+    /*configurações de estilo*/
     font-family: "Nerko One", cursive;
     font-weight: 400;
     color: #ffffff;
@@ -70,44 +61,38 @@ body{
     line-height: normal;
     white-space: nowrap;
 }
-
-.info{
-    background-color: #293442;
-    color: black;
-    margin: left;
-    margin-top: 40px;
-    max-width: 230px;
-    min-height: 870px;
+.estuda{
+    /*configurações de poscionamento  e tamanho*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 
 }
 
-.serviços{
-    display: inline-block;
+#menu{
+    /* configurações de tamanho e poscionamento*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+#menu > a{
+    /* configurações de tamanho e poscionamento*/
+    margin-left: 15px;
+    padding-top: 10px;
+
+}
+
+#menu > a{
+    /*configurações de estilo*/
     color: white;
     text-decoration: none;
-    font-family: "Kanit", sans-serif;
-    font-weight: 250px;
-    font-style: normal;
-    font-size: 20px;
 
 }
 
-#serviços{
-    padding-bottom: 20px;
-}
-
-.principal{
-    margin: auto;
-    height: 100vh;
-    position: relative;
-    color: wheat;
-    left: 900px;
-    right: 0px;
-    bottom: 900px;
-
-    
-    
-}
 
 
 
