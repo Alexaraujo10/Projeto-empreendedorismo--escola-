@@ -93,6 +93,38 @@ body{
 
 }
 
+ nav > #disciplina{
+    color: rgb(255, 255, 0);
+}
+nav > #enem{
+    color: rgb(71, 71, 255);
+}
+nav > #vestibular{
+ color: orange;
+}
 
+nav > #pesquisa{
+    color: purple;
+}
+
+nav > #oque{
+ color: red;
+}
+
+nav > #exercicios{
+ color: green;
+}
+
+nav > #monografia{
+ color: aqua;
+}
+
+nav > #video{
+ color: pink;
+}
+
+nav > #informação{
+ color: greenyellow;
+}
 
 
