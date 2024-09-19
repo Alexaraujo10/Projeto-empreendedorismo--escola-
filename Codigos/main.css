@@ -42,7 +42,7 @@ body {
     cursor: pointer;
 }
 
-.estuda {
+.estuda > p {
     font-family: "Nerko One", cursive;
     font-weight: 400;
     color: #ffffff;
@@ -61,12 +61,68 @@ body {
 }
 
 #menu > a {
-    margin-left: 15px;
+    margin-left: 10px;
     padding-top: 10px;
     color: white;
     text-decoration: none;
+    transition: 0.5s;
 }
-  
+ /*Configuração de animação do menu*/
+#menu > #disciplina:hover{
+ background-color: rgba(255, 255, 0, 0.336);
+ border-radius: 10px;
+ text-align: center;
+}
+
+#menu > #enem:hover{
+    background-color:rgba(71, 71, 255, 0.185) ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#menu > #vestibular:hover{
+    background-color:  rgba(255, 166, 0, 0.274);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#menu > #pesquisa:hover{
+  background-color: rgba(128, 0, 128, 0.247) ;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#menu > #oque:hover{
+    background-color: rgba(255, 0, 0, 0.274) ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#menu > #exercicios:hover{
+    background-color: rgba(0, 128, 0, 0.26);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#menu > #monografia:hover{
+    background-color: rgba(0, 255, 255, 0.226) ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#menu> #video:hover{
+    background-color: rgba(255, 192, 203, 0.329) ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#menu > #informação:hover{
+    background-color: rgba(172, 255, 47, 0.308) ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
 /*Configuração da cor dos botões do menu*/
  nav > #disciplina{
     color: rgb(255, 255, 0);
@@ -107,12 +163,19 @@ nav > #informação{
     margin: auto;
     text-align: center;
     margin-top: 70px;
-    width: 100%;
+    width: 40%;
     background-color: white;
 }
 
 #conteudo > p {
     text-align: justify;
+    background-color: #161C24;
+    color: white;
+}
+#conteudo > h1{
+ text-align: justify;
+ background-color: #161C24;
+ color: white;
 }
 
 /* Media queries para responsividade */
@@ -128,11 +191,11 @@ nav > #informação{
     }
 
     #menu {
-        flex-direction: column;
+       flex-direction: column;
     }
 
     #menu > a {
-        margin-left: 0;
+        margin-left: 0px;
         margin-top: 10px;
     }
 
@@ -142,7 +205,7 @@ nav > #informação{
     }
 
     #conteudo {
-        padding: 10px;
+        padding: 10px
     }
 }
 
