@@ -7,90 +7,64 @@
 
 
 
-*{
-    margin: 0px;
-    padding: 0px;
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
+body {
+    background-color: #161C24;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
+/* Estilos gerais */
 .nerko-one-regular {
     font-family: "Nerko One", cursive;
     font-weight: 400;
-    font-style: normal;
     color: white;
- font-size: 60px;
-  }
-  
-
-body{
-    background-color: #161C24;
-   
+    font-size: 60px;
 }
 
-.conteudos{
-    align-items: center;
-    color: var();
-    cursor: pointer;
+.conteudos {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 14px 16px;
     font-size: 1.5em;
     font-weight: 400;
-    grid-gap: 16px;
-    gap: 16px;
-    grid-gap: var();
-    gap: var();
     height: 52px;
-    justify-content: flex-start;
-    padding: 14px 0 14px 16px;
-    padding-left: var();
-    -webkit-text-decoration-color: var();
-    text-decoration-color: var();
-    width: 100%;
-    
+    color: white;
+    cursor: pointer;
 }
 
-
-
-
-.estuda{
-    /*configurações de estilo*/
+.estuda {
     font-family: "Nerko One", cursive;
     font-weight: 400;
     color: #ffffff;
     font-size: 55px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-}
-.estuda{
-    /*configurações de poscionamento  e tamanho*/
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-
 }
 
-#menu{
-    /* configurações de tamanho e poscionamento*/
+#menu {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: auto;
-    
 }
 
-#menu > a{
-    /* configurações de tamanho e poscionamento*/
+#menu > a {
     margin-left: 15px;
     padding-top: 10px;
-
-}
-
-#menu > a{
-    /*configurações de estilo*/
     color: white;
     text-decoration: none;
-
 }
   
 /*Configuração da cor dos botões do menu*/
@@ -128,22 +102,84 @@ nav > #informação{
  color: greenyellow;
 }
 
-#conteudo{
-    /*Configuração de tamanho e posicionamento*/
+
+#conteudo {
     margin: auto;
     text-align: center;
     margin-top: 70px;
-    width: 1080px;
-    
+    width: 100%;
+    background-color: white;
+}
 
-}
-#conteudo{
-  /*Configuração para estilo*/
-  background-color: white;
-}
-#conteudo > p{
+#conteudo > p {
     text-align: justify;
 }
 
+/* Media queries para responsividade */
 
+/* Telas pequenas, smartphones (até 600px) */
+@media (max-width: 600px) {
+    .nerko-one-regular {
+        font-size: 40px;
+    }
+    
+    .estuda {
+        font-size: 40px;
+    }
 
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu > a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .conteudos {
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+
+    #conteudo {
+        padding: 10px;
+    }
+}
+
+/* Telas médias, tablets (até 768px) */
+@media (max-width: 768px) {
+    .nerko-one-regular {
+        font-size: 50px;
+    }
+
+    .estuda {
+        font-size: 45px;
+    }
+
+    #menu {
+        flex-wrap: wrap;
+    }
+
+    .conteudos {
+        font-size: 1.3em;
+    }
+}
+
+/* Telas grandes, desktops (acima de 768px) */
+@media (min-width: 768px) {
+    .nerko-one-regular {
+        font-size: 60px;
+    }
+
+    .estuda {
+        font-size: 55px;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #conteudo {
+        max-width: 80%;
+    }
+}
