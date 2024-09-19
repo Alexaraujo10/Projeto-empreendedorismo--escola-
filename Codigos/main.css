@@ -82,7 +82,6 @@ body{
 #menu > a{
     /* configurações de tamanho e poscionamento*/
     margin-left: 15px;
-    margin: auto;
     padding-top: 10px;
 
 }
@@ -93,7 +92,8 @@ body{
     text-decoration: none;
 
 }
-
+  
+/*Configuração da cor dos botões do menu*/
  nav > #disciplina{
     color: rgb(255, 255, 0);
 }
@@ -127,5 +127,23 @@ nav > #video{
 nav > #informação{
  color: greenyellow;
 }
+
+#conteudo{
+    /*Configuração de tamanho e posicionamento*/
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    width: 1080px;
+    
+
+}
+#conteudo{
+  /*Configuração para estilo*/
+  background-color: white;
+}
+#conteudo > p{
+    text-align: justify;
+}
+
 
 
