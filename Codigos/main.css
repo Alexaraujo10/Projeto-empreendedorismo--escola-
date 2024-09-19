@@ -82,6 +82,7 @@ body{
 #menu > a{
     /* configurações de tamanho e poscionamento*/
     margin-left: 15px;
+    margin: auto;
     padding-top: 10px;
 
 }
