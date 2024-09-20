@@ -163,7 +163,7 @@ nav > #informação{
     margin: auto;
     text-align: center;
     margin-top: 70px;
-    width: 40%;
+    width: 65%;
     background-color: white;
 }
 
@@ -172,11 +172,21 @@ nav > #informação{
     background-color: #161C24;
     color: white;
 }
-#conteudo > h1{
+#conteudo > h2{
  text-align: justify;
  background-color: #161C24;
  color: white;
+ padding-top: 20px;
 }
+#conteudo > h1{
+    text-align: justify;
+    background-color: #161C24;
+    color: white;
+    padding-top: 20px;
+}
+
+
+
 
 /* Media queries para responsividade */
 
@@ -209,6 +219,17 @@ nav > #informação{
     }
 }
 
+#geral {
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagen img {
+    max-width: 90%;
+    margin-bottom: 16px;
+}
+
+
 /* Telas médias, tablets (até 768px) */
 @media (max-width: 768px) {
     .nerko-one-regular {
@@ -228,6 +249,13 @@ nav > #informação{
     }
 }
 
+@media (max-width: 768px) {
+    #imagen img {
+        max-width: 90%;
+    }
+}
+
+
 /* Telas grandes, desktops (acima de 768px) */
 @media (min-width: 768px) {
     .nerko-one-regular {
@@ -245,4 +273,8 @@ nav > #informação{
     #conteudo {
         max-width: 80%;
     }
+}
+
+#imagen img {
+    max-width: 100%;
 }
