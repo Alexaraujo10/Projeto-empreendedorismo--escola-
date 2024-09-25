@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 
 
@@ -28,6 +30,18 @@ body {
     color: white;
     font-size: 60px;
 }
+.fontes{
+    font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+#fontes{
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
 
 .conteudos {
     display: flex;
@@ -51,6 +65,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    
+}
+
+ #estuda > a{
+    text-decoration: none;
 }
 
 #menu {
@@ -58,6 +77,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    background-color: #00000013;
+    
 }
 
 #menu > a {
@@ -123,8 +144,10 @@ body {
 }
 
 
+
+
 /*Configuração da cor dos botões do menu*/
- nav > #disciplina{
+ nav > .menu-item{
     color: rgb(255, 255, 0);
 }
 nav > #enem{
@@ -165,24 +188,38 @@ nav > #informação{
     margin-top: 70px;
     width: 65%;
     background-color: white;
-}
-
-#conteudo > p {
-    text-align: justify;
     background-color: #161C24;
     color: white;
 }
-#conteudo > h2{
+
+#conteudo > div > p {
+    text-align: justify;
+    background-color: #161C24;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+
+}
+#conteudo > div > h2{
  text-align: justify;
  background-color: #161C24;
  color: white;
  padding-top: 20px;
 }
-#conteudo > h1{
-    text-align: justify;
+#conteudo > div > h1{
+    text-align: center;
     background-color: #161C24;
     color: white;
     padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#conteudo > div > subtitulos{
+    text-align: justify;
+ background-color: #161C24;
+ color: white;
+ padding-top: 20px;
+ padding-bottom: 20px
 }
 
 
@@ -278,3 +315,53 @@ nav > #informação{
 #imagen img {
     max-width: 100%;
 }
+
+
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #abcfff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Estilo do dropdown (inicialmente oculto) */
+.dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:  #161C24;
+    display: none;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown li {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Exibe o dropdown quando passar o mouse */
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+
